@@ -1,0 +1,473 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2024-12-19",
+  "description": "Comprehensive categorization system for Ars Magica 5th Edition spells",
+  
+  "primary_categories": {
+    "combat": {
+      "name": "Combat & Warfare",
+      "description": "Spells designed for direct confrontation, battle magic, and warfare",
+      "icon": "sword",
+      "color": "#dc2626",
+      "subcategories": [
+        "direct_damage",
+        "battlefield_control",
+        "defensive_combat",
+        "weapon_enhancement",
+        "armor_spells",
+        "siege_magic"
+      ]
+    },
+    "utility": {
+      "name": "Utility & Practical Magic",
+      "description": "Everyday practical spells for common tasks and convenience",
+      "icon": "wrench",
+      "color": "#2563eb",
+      "subcategories": [
+        "household_magic",
+        "crafting_assistance",
+        "transportation",
+        "communication",
+        "construction",
+        "maintenance"
+      ]
+    },
+    "healing": {
+      "name": "Healing & Medicine",
+      "description": "Spells for medical treatment, health restoration, and wellness",
+      "icon": "medical",
+      "color": "#16a34a",
+      "subcategories": [
+        "wound_healing",
+        "disease_treatment",
+        "poison_remedy",
+        "mental_health",
+        "enhancement",
+        "diagnosis"
+      ]
+    },
+    "divination": {
+      "name": "Divination & Knowledge",
+      "description": "Information gathering, scrying, and knowledge acquisition spells",
+      "icon": "crystal-ball",
+      "color": "#7c3aed",
+      "subcategories": [
+        "scrying",
+        "future_sight",
+        "past_reading",
+        "detection",
+        "analysis",
+        "truth_seeking"
+      ]
+    },
+    "transformation": {
+      "name": "Transformation & Alteration",
+      "description": "Spells that change the fundamental nature of targets",
+      "icon": "refresh",
+      "color": "#ea580c",
+      "subcategories": [
+        "shape_change",
+        "substance_alteration",
+        "size_modification",
+        "property_change",
+        "transmutation",
+        "enhancement"
+      ]
+    },
+    "illusion": {
+      "name": "Illusion & Deception",
+      "description": "Spells creating false perceptions and mental manipulations",
+      "icon": "mask",
+      "color": "#ec4899",
+      "subcategories": [
+        "visual_illusions",
+        "auditory_illusions",
+        "mental_influence",
+        "concealment",
+        "false_identity",
+        "misdirection"
+      ]
+    },
+    "summoning": {
+      "name": "Summoning & Binding",
+      "description": "Spells for calling forth and controlling entities or forces",
+      "icon": "demon",
+      "color": "#7c2d12",
+      "subcategories": [
+        "creature_summoning",
+        "elemental_calling",
+        "spirit_binding",
+        "force_manifestation",
+        "planar_contact",
+        "servitor_creation"
+      ]
+    },
+    "protection": {
+      "name": "Protection & Warding",
+      "description": "Defensive spells and protective enchantments",
+      "icon": "shield",
+      "color": "#059669",
+      "subcategories": [
+        "personal_protection",
+        "area_warding",
+        "magical_defense",
+        "physical_barriers",
+        "spiritual_protection",
+        "curse_prevention"
+      ]
+    },
+    "enchantment": {
+      "name": "Enchantment & Items",
+      "description": "Spells for creating and enhancing magical items",
+      "icon": "sparkle",
+      "color": "#d97706",
+      "subcategories": [
+        "item_creation",
+        "enhancement",
+        "temporary_effects",
+        "permanent_changes",
+        "invested_items",
+        "charged_items"
+      ]
+    },
+    "ritual": {
+      "name": "Ritual Magic",
+      "description": "High-level ceremonial magic requiring extended casting",
+      "icon": "candle",
+      "color": "#4338ca",
+      "subcategories": [
+        "longevity_rituals",
+        "seasonal_magic",
+        "covenant_effects",
+        "grand_workings",
+        "permanent_effects",
+        "collective_casting"
+      ]
+    }
+  },
+
+  "level_categories": {
+    "apprentice": {
+      "name": "Apprentice Level",
+      "description": "Spells accessible to beginning magi (Levels 1-15)",
+      "level_range": [1, 15],
+      "icon": "graduation-cap",
+      "color": "#22c55e"
+    },
+    "competent": {
+      "name": "Competent Magus",
+      "description": "Spells for experienced practitioners (Levels 16-25)",
+      "level_range": [16, 25],
+      "icon": "star",
+      "color": "#3b82f6"
+    },
+    "expert": {
+      "name": "Expert Level",
+      "description": "Advanced spells for skilled magi (Levels 26-35)",
+      "level_range": [26, 35],
+      "icon": "gem",
+      "color": "#8b5cf6"
+    },
+    "master": {
+      "name": "Master Level",
+      "description": "High-level spells for master magi (Levels 36-45)",
+      "level_range": [36, 45],
+      "icon": "crown",
+      "color": "#f59e0b"
+    },
+    "archmage": {
+      "name": "Archmage Level",
+      "description": "Legendary spells for the most powerful magi (Levels 46+)",
+      "level_range": [46, 99],
+      "icon": "star-burst",
+      "color": "#dc2626"
+    }
+  },
+
+  "technique_focus": {
+    "creo_focused": {
+      "name": "Creation Magic",
+      "description": "Spells primarily using Creo techniques",
+      "primary_technique": "Creo",
+      "icon": "sparkle",
+      "applications": ["healing", "summoning", "enhancement", "manifestation"]
+    },
+    "intellego_focused": {
+      "name": "Knowledge Magic", 
+      "description": "Spells primarily using Intellego techniques",
+      "primary_technique": "Intellego",
+      "icon": "eye",
+      "applications": ["divination", "detection", "analysis", "understanding"]
+    },
+    "muto_focused": {
+      "name": "Transformation Magic",
+      "description": "Spells primarily using Muto techniques", 
+      "primary_technique": "Muto",
+      "icon": "refresh",
+      "applications": ["shapeshifting", "alteration", "enhancement", "modification"]
+    },
+    "perdo_focused": {
+      "name": "Destruction Magic",
+      "description": "Spells primarily using Perdo techniques",
+      "primary_technique": "Perdo",
+      "icon": "explosion",
+      "applications": ["combat", "destruction", "weakening", "removal"]
+    },
+    "rego_focused": {
+      "name": "Control Magic",
+      "description": "Spells primarily using Rego techniques",
+      "primary_technique": "Rego",
+      "icon": "hand",
+      "applications": ["control", "manipulation", "movement", "command"]
+    }
+  },
+
+  "form_applications": {
+    "animal": {
+      "name": "Animal Magic",
+      "description": "Spells affecting animals and animal-related phenomena",
+      "form": "Animal",
+      "icon": "wolf",
+      "common_uses": ["beast_mastery", "transformation", "communication", "enhancement"]
+    },
+    "aquam": {
+      "name": "Water Magic",
+      "description": "Spells affecting water and liquid substances",
+      "form": "Aquam", 
+      "icon": "wave",
+      "common_uses": ["weather_control", "purification", "movement", "destruction"]
+    },
+    "auram": {
+      "name": "Air Magic",
+      "description": "Spells affecting air, wind, and atmospheric phenomena",
+      "form": "Auram",
+      "icon": "wind",
+      "common_uses": ["weather_magic", "flight", "communication", "concealment"]
+    },
+    "corpus": {
+      "name": "Body Magic",
+      "description": "Spells affecting human bodies and physical forms",
+      "form": "Corpus",
+      "icon": "person",
+      "common_uses": ["healing", "enhancement", "transformation", "longevity"]
+    },
+    "herbam": {
+      "name": "Plant Magic",
+      "description": "Spells affecting plants and plant-derived materials",
+      "form": "Herbam",
+      "icon": "leaf",
+      "common_uses": ["agriculture", "crafting", "barriers", "growth"]
+    },
+    "ignem": {
+      "name": "Fire Magic",
+      "description": "Spells affecting fire, heat, and thermal energy",
+      "form": "Ignem",
+      "icon": "fire",
+      "common_uses": ["combat", "crafting", "illumination", "destruction"]
+    },
+    "imaginem": {
+      "name": "Image Magic",
+      "description": "Spells affecting images, illusions, and perceptions",
+      "form": "Imaginem",
+      "icon": "image",
+      "common_uses": ["illusion", "concealment", "communication", "deception"]
+    },
+    "mentem": {
+      "name": "Mind Magic",
+      "description": "Spells affecting minds, emotions, and mental phenomena",
+      "form": "Mentem",
+      "icon": "brain",
+      "common_uses": ["mind_control", "communication", "illusion", "knowledge"]
+    },
+    "terram": {
+      "name": "Earth Magic",
+      "description": "Spells affecting earth, stone, and mineral substances",
+      "form": "Terram",
+      "icon": "mountain",
+      "common_uses": ["construction", "crafting", "barriers", "movement"]
+    },
+    "vim": {
+      "name": "Magic Magic",
+      "description": "Spells affecting magic itself and magical phenomena",
+      "form": "Vim",
+      "icon": "magic-wand",
+      "common_uses": ["dispelling", "enhancement", "detection", "creation"]
+    }
+  },
+
+  "duration_categories": {
+    "instantaneous": {
+      "name": "Instantaneous Effects",
+      "description": "Spells with immediate, permanent results",
+      "durations": ["Momentary"],
+      "examples": ["healing", "transformation", "creation"]
+    },
+    "temporary": {
+      "name": "Temporary Effects", 
+      "description": "Spells with limited duration requiring concentration or timing",
+      "durations": ["Concentration", "Diameter"],
+      "examples": ["illusions", "enhancements", "control"]
+    },
+    "extended": {
+      "name": "Extended Effects",
+      "description": "Spells lasting for significant periods without concentration",
+      "durations": ["Sun", "Moon"],
+      "examples": ["protection", "enhancement", "concealment"]
+    },
+    "permanent": {
+      "name": "Permanent Effects",
+      "description": "Spells creating lasting changes to reality",
+      "durations": ["Year", "Permanent"],
+      "examples": ["longevity", "item_creation", "major_transformation"]
+    }
+  },
+
+  "complexity_categories": {
+    "simple": {
+      "name": "Simple Spells",
+      "description": "Straightforward effects with minimal variables",
+      "characteristics": ["single_target", "clear_effect", "standard_parameters"],
+      "learning_difficulty": "Easy"
+    },
+    "moderate": {
+      "name": "Moderate Spells",
+      "description": "Spells with some complexity or multiple aspects",
+      "characteristics": ["multiple_targets", "conditional_effects", "variable_parameters"],
+      "learning_difficulty": "Standard"
+    },
+    "complex": {
+      "name": "Complex Spells", 
+      "description": "Sophisticated spells requiring deep understanding",
+      "characteristics": ["intricate_targeting", "multiple_effects", "precise_control"],
+      "learning_difficulty": "Hard"
+    },
+    "legendary": {
+      "name": "Legendary Spells",
+      "description": "Masterwork spells of incredible sophistication",
+      "characteristics": ["reality_altering", "multiple_techniques", "unique_effects"],
+      "learning_difficulty": "Extreme"
+    }
+  },
+
+  "source_categories": {
+    "core_rulebook": {
+      "name": "Core Rulebook",
+      "description": "Spells from the main Ars Magica 5th Edition rulebook",
+      "canonical": true,
+      "priority": 1
+    },
+    "houses_of_hermes": {
+      "name": "Houses of Hermes",
+      "description": "House-specific spells from official supplements",
+      "canonical": true,
+      "priority": 2
+    },
+    "realm_books": {
+      "name": "Realm Books",
+      "description": "Spells from Divine, Infernal, Faerie, and Magic realm books",
+      "canonical": true,
+      "priority": 2
+    },
+    "tribunal_books": {
+      "name": "Tribunal Books",
+      "description": "Region-specific spells from tribunal sourcebooks",
+      "canonical": true,
+      "priority": 3
+    },
+    "community_validated": {
+      "name": "Community Validated",
+      "description": "High-quality community-created spells reviewed by experts",
+      "canonical": false,
+      "priority": 4
+    },
+    "community_contributed": {
+      "name": "Community Contributed",
+      "description": "Community-created spells pending full validation",
+      "canonical": false,
+      "priority": 5
+    }
+  },
+
+  "usage_context": {
+    "covenant_life": {
+      "name": "Covenant Life",
+      "description": "Spells commonly used in covenant management and daily life",
+      "applications": ["maintenance", "defense", "resources", "communication"]
+    },
+    "adventure": {
+      "name": "Adventure Magic",
+      "description": "Spells useful during adventures and exploration", 
+      "applications": ["survival", "investigation", "problem_solving", "emergency"]
+    },
+    "laboratory": {
+      "name": "Laboratory Work",
+      "description": "Spells assisting with magical research and enchantment",
+      "applications": ["research", "item_creation", "experimentation", "analysis"]
+    },
+    "social": {
+      "name": "Social Interaction",
+      "description": "Spells for dealing with mundane society and politics",
+      "applications": ["influence", "concealment", "communication", "impression"]
+    },
+    "combat": {
+      "name": "Combat Situations",
+      "description": "Spells designed for conflict and dangerous encounters",
+      "applications": ["offense", "defense", "tactics", "survival"]
+    },
+    "ritual_ceremony": {
+      "name": "Ritual & Ceremony",
+      "description": "Spells for formal magical workings and ceremonies",
+      "applications": ["seasonal_rituals", "covenant_magic", "grand_workings", "communion"]
+    }
+  },
+
+  "target_scope": {
+    "personal": {
+      "name": "Personal Magic",
+      "description": "Spells affecting only the caster",
+      "targets": ["Individual (self)"],
+      "range_limit": ["Personal"]
+    },
+    "individual": {
+      "name": "Individual Targeting",
+      "description": "Spells affecting a single target",
+      "targets": ["Individual", "Part"],
+      "typical_uses": ["precision_effects", "personal_enhancement", "direct_action"]
+    },
+    "group": {
+      "name": "Group Effects",
+      "description": "Spells affecting multiple targets simultaneously",
+      "targets": ["Group", "Room"],
+      "typical_uses": ["mass_effects", "area_control", "multiple_enhancement"]
+    },
+    "area": {
+      "name": "Area Effects",
+      "description": "Spells affecting large areas or structures",
+      "targets": ["Structure", "Boundary"],
+      "typical_uses": ["environmental_effects", "large_scale_changes", "territorial_magic"]
+    }
+  },
+
+  "tags": {
+    "combat_ready": "Spells optimized for combat situations",
+    "social_utility": "Spells useful in social interactions",
+    "crafting_aid": "Spells that assist with crafting and creation",
+    "investigation": "Spells useful for gathering information",
+    "travel": "Spells helpful during travel and exploration",
+    "covenant_defense": "Spells for protecting magical communities",
+    "apprentice_friendly": "Spells suitable for beginning magi",
+    "resource_generation": "Spells that create or enhance resources",
+    "emergency_use": "Spells for crisis situations",
+    "subtle": "Spells with minimal obvious magical effects",
+    "flashy": "Spells with dramatic visible effects",
+    "concentration_required": "Spells requiring ongoing mental effort",
+    "ritual_only": "Spells that must be cast as rituals",
+    "fast_cast": "Spells suitable for fast-casting",
+    "seasonal": "Spells tied to specific seasons or times",
+    "laboratory_only": "Spells only usable in laboratory settings",
+    "outdoor_only": "Spells requiring outdoor casting",
+    "urban_useful": "Spells particularly useful in urban environments",
+    "wilderness_survival": "Spells for surviving in wild areas",
+    "weather_dependent": "Spells affected by weather conditions"
+  }
+}
