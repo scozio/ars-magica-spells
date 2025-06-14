@@ -1,0 +1,115 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ars Magica Spell Database Schema",
+  "type": "object",
+  "definitions": {
+    "spell": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the spell"
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the spell"
+        },
+        "technique": {
+          "type": "string",
+          "enum": ["Creo", "Intellego", "Muto", "Perdo", "Rego"]
+        },
+        "form": {
+          "type": "string",
+          "enum": ["Animal", "Aquam", "Auram", "Corpus", "Herbam", "Ignem", "Imaginem", "Mentem", "Terram", "Vim"]
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "range": {
+          "type": "string",
+          "enum": ["Personal", "Touch", "Eye", "Voice", "Sight", "Arcane Connection"]
+        },
+        "duration": {
+          "type": "string",
+          "enum": ["Momentary", "Concentration", "Diameter", "Sun", "Moon", "Year", "Permanent"]
+        },
+        "target": {
+          "type": "string",
+          "enum": ["Individual", "Part", "Group", "Room", "Structure", "Boundary"]
+        },
+        "requisites": {
+          "type": "string",
+          "description": "Required secondary Arts, or 'None'"
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed description of the spell's effects"
+        },
+        "guidelines": {
+          "type": "string",
+          "description": "Explanation of how the spell level is calculated"
+        },
+        "source": {
+          "type": "string",
+          "description": "Book or source where the spell appears"
+        },
+        "page": {
+          "type": "integer",
+          "description": "Page number in source material"
+        },
+        "ritual": {
+          "type": "boolean",
+          "description": "Whether this is a ritual spell"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Additional categorization tags"
+        }
+      },
+      "required": ["name", "technique", "form", "level", "range", "duration", "target", "description"]
+    },
+    "guideline": {
+      "type": "object",
+      "properties": {
+        "technique": {
+          "type": "string",
+          "enum": ["Creo", "Intellego", "Muto", "Perdo", "Rego"]
+        },
+        "form": {
+          "type": "string",
+          "enum": ["Animal", "Aquam", "Auram", "Corpus", "Herbam", "Ignem", "Imaginem", "Mentem", "Terram", "Vim"]
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "effect": {
+          "type": "string",
+          "description": "Description of the magical effect"
+        },
+        "category": {
+          "type": "string",
+          "description": "Category of effect (Creation, Combat, etc.)"
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed explanation of the guideline"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Categorization tags"
+        }
+      },
+      "required": ["technique", "form", "level", "effect", "category"]
+    }
+  }
+}
