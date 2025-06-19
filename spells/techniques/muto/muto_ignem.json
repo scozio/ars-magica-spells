@@ -157,7 +157,7 @@
       "name": "Purifying Flames",
       "technique": "Muto",
       "form": "Ignem",
-      "level": "20",
+      "level": 20,
       "range": "Touch",
       "duration": "Concentration",
       "target": "Individual",
