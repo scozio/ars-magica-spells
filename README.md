@@ -20,14 +20,7 @@ A professional, GitHub API-powered system for Ars Magica spell creation and refe
 ## Repository Structure
 
 `
-ars-magica-spells/
-â”œâ”€â”€ spells/
-â”‚   â”œâ”€â”€ techniques/        # Organized by Technique/Form
-â”‚   â””â”€â”€ collections/       # Curated spell collections
-â”œâ”€â”€ guidelines/            # Base effect guidelines
-â”œâ”€â”€ metadata/             # System definitions
-â””â”€â”€ docs/                 # Documentation
-`
+ars-magica-spells/spells/techniques/
 
 ## Contributing
 
