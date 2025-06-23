@@ -1,0 +1,65 @@
+{
+  "totalSpells": 501,
+  "byTechnique": {
+    "Creo": 101,
+    "Intellego": 71,
+    "Muto": 109,
+    "Perdo": 108,
+    "Rego": 112
+  },
+  "byForm": {
+    "Animal": 54,
+    "Aquam": 54,
+    "Corpus": 43,
+    "Herbam": 56,
+    "Ignem": 54,
+    "Imaginem": 45,
+    "Mentem": 54,
+    "Terram": 45,
+    "Vim": 51,
+    "Auram": 45
+  },
+  "byLevel": {
+    "6-15 (Competent)": 161,
+    "16-25 (Expert)": 209,
+    "26-35 (Master)": 78,
+    "1-5 (Apprentice)": 37,
+    "36-50 (Archmage)": 16
+  },
+  "byRange": {
+    "Voice": 217,
+    "Touch": 188,
+    "Personal": 63,
+    "Arcane connection": 7,
+    "Eye": 14,
+    "Sight": 12
+  },
+  "byDuration": {
+    "Sun": 157,
+    "Momentary": 156,
+    "Moon": 30,
+    "Diameter": 31,
+    "Year": 25,
+    "Concentration": 97,
+    "Special": 2,
+    "Ring": 3
+  },
+  "byTarget": {
+    "Individual": 391,
+    "Group": 22,
+    "Room": 29,
+    "Structure": 14,
+    "Boundary": 19,
+    "Circle": 4,
+    "Vision": 11,
+    "Hearing": 7,
+    "Smell": 3,
+    "Touch": 1
+  },
+  "generatedAt": "2025-06-23T00:50:33.544Z",
+  "repository": {
+    "owner": "scozio",
+    "repo": "ars-magica-spells",
+    "branch": "main"
+  }
+}

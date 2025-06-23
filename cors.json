@@ -1,0 +1,10 @@
+{
+  "rules": [
+    {
+      "AllowedOrigins": ["https://charactergens.com", "http://localhost:3000"],
+      "AllowedMethods": ["GET", "HEAD"],
+      "AllowedHeaders": ["*"],
+      "MaxAgeSeconds": 3600
+    }
+  ]
+}
